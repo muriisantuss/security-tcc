@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700;800&display=swap");
+@import url("/fonts.css");
 
 :root {
   /* colors */
@@ -33,8 +34,9 @@
 }
 
 body {
-  font-family: "Noto Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: var(--font-noto);
+  font-style: normal;
+  font-weight: var(--fw-regular);
   color: #242424;
 }
 
@@ -606,6 +608,22 @@ div.carrousel {
   padding: 5rem 0;
 }
 
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* Proporção de aspecto 16:9 para o vídeo */
+  padding-top: 30px; /* Adicione algum preenchimento opcional acima do vídeo */
+  height: 0;
+  overflow: hidden;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 .bottom-button {
   display: flex;
   justify-content: center;
@@ -939,7 +957,6 @@ footer article ul {
   .mid-mid {
     transform: scale(0.8);
   }
-  
 
   .mid-mid article {
     width: 150%;
@@ -1004,8 +1021,8 @@ footer article ul {
   .bottom-button {
     display: grid;
   }
-  .bottom-black div article {
-    margin-right: 1rem;
+  .bottom-black {
+    padding: 3rem 0;
   }
 }
 
@@ -1055,7 +1072,6 @@ footer article ul {
     width: 110%;
   }
 
-
   .menu-mobile nav a {
     color: #fff;
     display: block;
@@ -1068,16 +1084,16 @@ footer article ul {
     transform: scale(0.65);
   }
 
-  .mid-mid article{
+  .mid-mid article {
     transform: scale(0.75);
   }
 
-  .mid-grids-{
+  .mid-grids- {
     margin: 0;
     padding: 0;
   }
 
-   .grids {
+  .grids {
     grid-template-rows: repeat(1, 1fr);
     grid-template-columns: repeat(1, 1fr);
   }
@@ -1086,15 +1102,14 @@ footer article ul {
     width: 60%;
   }
 
-  .mid-two-{
-  padding: 0;
+  .mid-two- {
+    padding: 0;
   }
 
   .mid-two- .mid-mid_text {
     width: 180%;
     transform: scale(0.65);
     margin-bottom: 1%;
-
   }
 
   .nav-manual,
@@ -1132,9 +1147,8 @@ footer article ul {
     width: 100%;
   }
 
-  footer .logo span{
+  footer .logo span {
     font: var(--fw-semibold) 1.5rem/30px var(--font-noto);
-
   }
 
   footer article {
