@@ -50,7 +50,7 @@ Isso abrirá automaticamente o seu navegador padrão e carregará o site. Qualqu
 
 ### 🛠 Tecnologias
 
-As seguintes ferramentas foram usadas na construção do projeto:
+As seguintes ferramentas foram usadas na construção do projeto: <br>
 Website **([HTLML5](https://html.com/) + [CSS3](https://w3.org/Style/CSS/Overview.en.html) + [JavaScript](https://www.javascript.com/))**
 - **[HTML5](https://html.com/)**
 - **[CSS3](https://w3.org/Style/CSS/Overview.en.html)**
